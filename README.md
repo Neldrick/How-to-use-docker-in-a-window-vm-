@@ -127,10 +127,12 @@ chmod +x "$HOME/bin/docker-machine.exe"
 ```
 docker-machine -D create --driver=vmwareworkstation --vmwareworkstation-boot2docker-  url=https://github.com/StefanScherer/boot2docker/releases/download/18.09.0-vmware/boot2docker.iso default
 ```
-14. docker-machine env default > dockerdev.bat
+14. run command
+```
+docker-machine env default > dockerdev.bat
+```
+15.  run dockerdev.bat
 
-15. run dockerdev
+16.  test by docker version and you can try docker-run hello-world
 
-16.  test by docker version
-
-17. after restart  a. run docker-machine start default , b. run dokerdev.bat 
+17.  if restart computer  a. run docker-machine start default , b. run dokerdev.bat 
