@@ -18,10 +18,10 @@ https://code.vmware.com/web/sdk/6.7/vddk
 6  set path of 2 and 3 for vmrun and vmware-vdiskmanager.exe
 
 7. install Docker Toolbox without virtualbox 
-DockerToolbox-.exe /COMPONENTS="Docker,DockerMachine"
-
-https://github.com/pecigonzalo/docker-machine-vmwareworkstation
+   DockerToolbox-.exe /COMPONENTS="Docker,DockerMachine"
+   https://github.com/pecigonzalo/docker-machine-vmwareworkstation
 8.Replace contents of C:\Program Files\Docker Toolbox\start.sh with this script.
+```
 --------------------------------------------
 #!/bin/bash
 
@@ -107,7 +107,7 @@ else
   exec "$BASH" -c "$*"
 fi
 
-
+```
 -----------------------------------------------------------------------
 9. download and install git bash 
 https://git-scm.com/downloads
