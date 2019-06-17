@@ -125,7 +125,7 @@ chmod +x "$HOME/bin/docker-machine.exe"
 12. copy vmwareworkstation plugin to a place like c:\Docker
 13. run following command
 ```
-docker-machine -D create --driver=vmwareworkstation --vmwareworkstation-boot2docker-  url=https://github.com/StefanScherer/boot2docker/releases/download/18.09.0-vmware/boot2docker.iso default
+docker-machine -D create --driver=vmwareworkstation --vmwareworkstation-boot2docker-  url=https://github.com/StefanScherer/boot2docker/releases/download/v18.09.6/boot2docker.iso default
 ```
 14. run command
 ```
