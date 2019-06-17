@@ -22,7 +22,6 @@ https://code.vmware.com/web/sdk/6.7/vddk
    https://github.com/pecigonzalo/docker-machine-vmwareworkstation
 8.Replace contents of C:\Program Files\Docker Toolbox\start.sh with this script.
 ```
---------------------------------------------
 #!/bin/bash
 
 export PATH="$PATH:/mnt/c/Program Files (x86)/VMware/VMware Workstation"
@@ -108,29 +107,30 @@ else
 fi
 
 ```
------------------------------------------------------------------------
+
 9. download and install git bash 
-https://git-scm.com/downloads
+   https://git-scm.com/downloads
 
 10. download docker machine by git bash
-
+```
 $ if [[ ! -d "$HOME/bin" ]]; then mkdir -p "$HOME/bin"; fi && \
 curl -L https://github.com/docker/machine/releases/download/v0.16.1/docker-machine-Windows-x86_64.exe > "$HOME/bin/docker-machine.exe" && \
 chmod +x "$HOME/bin/docker-machine.exe"
-
+```
 
 11.download vmwareworkstation plugin
-https://github.com/pecigonzalo/docker-machine-vmwareworkstation
-https://github.com/pecigonzalo/docker-machine-vmwareworkstation/releases/download/v1.1.0/docker-machine-driver-vmwareworkstation.exe
+ https://github.com/pecigonzalo/docker-machine-vmwareworkstation
+ https://github.com/pecigonzalo/docker-machine-vmwareworkstation/releases/download/v1.1.0/docker-machine-driver-vmwareworkstation.exe
 
 12. copy vmwareworkstation plugin to a place like c:\Docker
 13. run following command
-docker-machine -D create --driver=vmwareworkstation --vmwareworkstation-boot2docker-url=https://github.com/StefanScherer/boot2docker/releases/download/18.09.0-vmware/boot2docker.iso default
-
+```
+docker-machine -D create --driver=vmwareworkstation --vmwareworkstation-boot2docker-  url=https://github.com/StefanScherer/boot2docker/releases/download/18.09.0-vmware/boot2docker.iso default
+```
 14. docker-machine env default > dockerdev.bat
 
 15. run dockerdev
 
-16.test by docker version
+16.  test by docker version
 
 17. after restart  a. run docker-machine start default , b. run dokerdev.bat 
