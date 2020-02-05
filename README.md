@@ -15,6 +15,7 @@ https://code.vmware.com/web/sdk/6.7/vddk
 
 4. install 1 & 2 
 5. extract put 3 into c:/Program file (x86)\vmware\
+
 6  set path of 2 and 3 for vmrun and vmware-vdiskmanager.exe
 
 7. install Docker Toolbox without virtualbox 
